@@ -1,0 +1,73 @@
+.chat-history-window {
+  height: 100vh;
+  margin: 10px;
+  color: inherit;
+  border: solid black 1px;
+  border-radius: 10px;
+  overflow-y: scroll;
+  font-size: 2rem;
+}
+
+.chat-history-window {
+  background-color: rgb(255, 175, 175);
+  background: url(https://i.picsum.photos/id/941/1500/900.jpg?hmac=4fUzb7m_vXOg7TGMJO7ZjNHpLS-uyFStd4ktV-nuUeU);
+  &::-webkit-scrollbar {
+    width: 14px;
+  }
+  &::-webkit-scrollbar-track {
+    padding: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    border: 4px solid transparent;
+    background-clip: padding-box;
+    border-radius: 9999px;
+    background-color: rgb(146, 146, 146);
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: rgb(179, 179, 179);
+  }
+}
+
+.users-name {
+  font-size: 0.9rem;
+  text-align: right;
+  color: rgb(27, 85, 0);
+  font-weight: 700;
+}
+
+.others-name {
+  font-size: 0.9rem;
+  color: rgb(158, 103, 0);
+  font-weight: 700;
+}
+
+$message-backgound: rgb(255, 255, 255);
+.others-message {
+  border: solid black 1px;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  max-width: 80%;
+  color: inherit;
+  background-color: $message-backgound;
+}
+
+.users-message {
+  border: solid black 1px;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  max-width: 80%;
+  background-color: $message-backgound;
+  // color: $base-color;
+}
